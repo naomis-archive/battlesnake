@@ -2,6 +2,8 @@
 
 An API server to interface with the Battlesnake Client.
 
+> Placed in the top 32 Gold tier snakes for the Summer 2021 League!
+
 ![](https://img.shields.io/codeclimate/maintainability/nhcarrigan/battlesnake)
 ![](https://img.shields.io/codeclimate/issues/nhcarrigan/battlesnake)
 ![](https://img.shields.io/codeclimate/tech-debt/nhcarrigan/battlesnake)
