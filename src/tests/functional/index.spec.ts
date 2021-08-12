@@ -9,8 +9,8 @@ const expectedBody = {
   apiversion: "1",
   author: "nhcarrigan",
   color: "#451c70",
-  head: "pixel",
-  tail: "pixel",
+  head: "replit-mark",
+  tail: "replit-notmark",
 };
 
 suite("'/' Route", () => {
