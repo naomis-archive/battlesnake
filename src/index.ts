@@ -1,15 +1,15 @@
+import http from "http";
+import https from "https";
+import { readFile } from "fs/promises";
 import express from "express";
 import bodyParser from "body-parser";
+import * as Sentry from "@sentry/node";
+import { RewriteFrames } from "@sentry/integrations";
 import { handleIndex } from "./controllers/handleIndex";
 import { handleStart } from "./controllers/handleStart";
 import { handleMove } from "./controllers/handleMove";
 import { handleEnd } from "./controllers/handleEnd";
-import * as Sentry from "@sentry/node";
-import { RewriteFrames } from "@sentry/integrations";
 import { logHandler } from "./utils/logHandler";
-import http from "http";
-import https from "https";
-import { readFile } from "fs/promises";
 
 Sentry.init({
   dsn: process.env.SENTRY_DSN,
@@ -21,7 +21,7 @@ Sentry.init({
   ],
 });
 
-export const app = express();
+const app = express();
 
 (async () => {
   app.use(bodyParser.json());
@@ -64,3 +64,5 @@ export const app = express();
     });
   }
 })();
+
+export default app;

@@ -47,6 +47,9 @@ const mockRequest: RequestBodyInt = {
   you: mockMe,
 };
 
+/**
+ * Utility to reset the data.
+ */
 const cleanData = () => {
   mockMe.body = [];
   mockSnake.body = [];

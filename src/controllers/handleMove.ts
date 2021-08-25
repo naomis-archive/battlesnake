@@ -9,8 +9,9 @@ import { errorHandler } from "../utils/errorHandler";
 /**
  * Receives a GameInt in the request packet, sends back a valid
  * move direction as string.
- * @param request Request packet
- * @param response Response packet
+ *
+ * @param {Request} request Request packet.
+ * @param {Response} response Response packet.
  */
 export const handleMove = (request: Request, response: Response): void => {
   try {

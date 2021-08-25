@@ -5,7 +5,8 @@ import { errorHandler } from "../utils/errorHandler";
 /**
  * Generates an array of all currently occupied board locations.
  *
- * @param {RequestBodyInt} data the API data received from the game client
+ * @param {RequestBodyInt} data The API data received from the game client.
+ * @returns {CoordinateInt[]} An array of occupied board locations.
  */
 export const findOccupiedSquares = (data: RequestBodyInt): CoordinateInt[] => {
   try {

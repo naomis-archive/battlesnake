@@ -1,6 +1,6 @@
 import chai, { assert } from "chai";
 import chaiHttp from "chai-http";
-import { app } from "../../index";
+import app from "../../index";
 import { BattleSnakeInt } from "../../interfaces/BattleSnakeInt";
 import { BoardInt } from "../../interfaces/BoardInt";
 import { RequestBodyInt } from "../../interfaces/RequestBodyInt";

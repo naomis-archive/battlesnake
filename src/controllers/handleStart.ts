@@ -3,8 +3,9 @@ import { errorHandler } from "../utils/errorHandler";
 
 /**
  * Used to confirm game start. Sends 200OK.
- * @param _ Unused
- * @param response Response packet
+ *
+ * @param {Request} _ Unused Request packet.
+ * @param {Response} response Response packet.
  */
 export const handleStart = (_: Request, response: Response): void => {
   try {

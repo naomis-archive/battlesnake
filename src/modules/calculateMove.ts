@@ -14,9 +14,11 @@ import { obsAtUp } from "./obstacles/obsAtUp";
 
 /**
  * Calculates available moves, then selects non-losing move randomly.
- * @param {CoordinateInt} location My snake's current head location
- * @param {CoordinateInt[]} obstacles Array of occupied board squares
- * @param {BoardInt} board Board data (for size)
+ *
+ * @param {CoordinateInt} location My snake's current head location.
+ * @param {CoordinateInt[]} obstacles Array of occupied board squares.
+ * @param {BoardInt} board Board data (for size).
+ * @returns {MoveType} Move to make.
  */
 export const calculateMove = (
   location: CoordinateInt,
