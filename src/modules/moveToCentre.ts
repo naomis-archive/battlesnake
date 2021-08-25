@@ -2,6 +2,14 @@ import { CoordinateInt } from "../interfaces/CoordinateInt";
 import { MoveType } from "../interfaces/MoveInt";
 import { errorHandler } from "../utils/errorHandler";
 
+/**
+ * Moves the snake toward the centre of the board.
+ *
+ * @param {CoordinateInt} location The snake head's current location.
+ * @param {number[]} boardSize The size of the board, in [x, y] format.
+ * @param {MoveType[]} availableMoves Valid moves to select from.
+ * @returns {MoveType} The move to make.
+ */
 export const moveToCentre = (
   location: CoordinateInt,
   boardSize: number[],

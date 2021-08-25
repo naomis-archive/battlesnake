@@ -1,4 +1,5 @@
 import { assert } from "chai";
+
 import { BoardInt } from "../../interfaces/BoardInt";
 import { CoordinateInt } from "../../interfaces/CoordinateInt";
 import { calculateMove } from "../../modules/calculateMove";

@@ -1,4 +1,5 @@
 import { assert } from "chai";
+
 import { BattleSnakeInt } from "../../interfaces/BattleSnakeInt";
 import { BoardInt } from "../../interfaces/BoardInt";
 import { RequestBodyInt } from "../../interfaces/RequestBodyInt";
@@ -43,6 +44,9 @@ const mockRequest: RequestBodyInt = {
   you: mockMe,
 };
 
+/**
+ * Utility to reset the board data.
+ */
 const cleanData = () => {
   mockMe.body = [];
   mockSnake.body = [];

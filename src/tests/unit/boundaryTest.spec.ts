@@ -1,10 +1,11 @@
 import { assert } from "chai";
+
 import { BoardInt } from "../../interfaces/BoardInt";
 import { CoordinateInt } from "../../interfaces/CoordinateInt";
-import { isAtUp } from "../../modules/boundaries/isAtUp";
 import { isAtDown } from "../../modules/boundaries/isAtDown";
 import { isAtLeft } from "../../modules/boundaries/isAtLeft";
 import { isAtRight } from "../../modules/boundaries/isAtRight";
+import { isAtUp } from "../../modules/boundaries/isAtUp";
 
 const defaultMockBoard: BoardInt = {
   height: 11,

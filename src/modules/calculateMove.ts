@@ -2,6 +2,7 @@ import { BoardInt } from "../interfaces/BoardInt";
 import { CoordinateInt } from "../interfaces/CoordinateInt";
 import { MoveType } from "../interfaces/MoveInt";
 import { errorHandler } from "../utils/errorHandler";
+
 import { isAtDown } from "./boundaries/isAtDown";
 import { isAtLeft } from "./boundaries/isAtLeft";
 import { isAtRight } from "./boundaries/isAtRight";
@@ -14,9 +15,11 @@ import { obsAtUp } from "./obstacles/obsAtUp";
 
 /**
  * Calculates available moves, then selects non-losing move randomly.
- * @param {CoordinateInt} location My snake's current head location
- * @param {CoordinateInt[]} obstacles Array of occupied board squares
- * @param {BoardInt} board Board data (for size)
+ *
+ * @param {CoordinateInt} location My snake's current head location.
+ * @param {CoordinateInt[]} obstacles Array of occupied board squares.
+ * @param {BoardInt} board Board data (for size).
+ * @returns {MoveType} Move to make.
  */
 export const calculateMove = (
   location: CoordinateInt,
