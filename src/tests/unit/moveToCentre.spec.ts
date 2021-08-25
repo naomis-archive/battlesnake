@@ -1,4 +1,5 @@
 import { assert } from "chai";
+
 import { MoveType } from "../../interfaces/MoveInt";
 import { moveToCentre } from "../../modules/moveToCentre";
 

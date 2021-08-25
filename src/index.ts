@@ -1,14 +1,16 @@
+import { readFile } from "fs/promises";
 import http from "http";
 import https from "https";
-import { readFile } from "fs/promises";
-import express from "express";
-import bodyParser from "body-parser";
-import * as Sentry from "@sentry/node";
+
 import { RewriteFrames } from "@sentry/integrations";
-import { handleIndex } from "./controllers/handleIndex";
-import { handleStart } from "./controllers/handleStart";
-import { handleMove } from "./controllers/handleMove";
+import * as Sentry from "@sentry/node";
+import bodyParser from "body-parser";
+import express from "express";
+
 import { handleEnd } from "./controllers/handleEnd";
+import { handleIndex } from "./controllers/handleIndex";
+import { handleMove } from "./controllers/handleMove";
+import { handleStart } from "./controllers/handleStart";
 import { logHandler } from "./utils/logHandler";
 
 Sentry.init({

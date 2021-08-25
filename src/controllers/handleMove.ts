@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+
 import { CoordinateInt } from "../interfaces/CoordinateInt";
 import { MoveType } from "../interfaces/MoveInt";
 import { RequestBodyInt } from "../interfaces/RequestBodyInt";

@@ -1,4 +1,5 @@
 import { assert } from "chai";
+
 import { BattleSnakeInt } from "../../interfaces/BattleSnakeInt";
 import { BoardInt } from "../../interfaces/BoardInt";
 import { RequestBodyInt } from "../../interfaces/RequestBodyInt";

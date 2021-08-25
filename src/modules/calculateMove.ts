@@ -2,6 +2,7 @@ import { BoardInt } from "../interfaces/BoardInt";
 import { CoordinateInt } from "../interfaces/CoordinateInt";
 import { MoveType } from "../interfaces/MoveInt";
 import { errorHandler } from "../utils/errorHandler";
+
 import { isAtDown } from "./boundaries/isAtDown";
 import { isAtLeft } from "./boundaries/isAtLeft";
 import { isAtRight } from "./boundaries/isAtRight";
