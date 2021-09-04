@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/nhcarrigan/battlesnake#readme",
   "engines": {
-    "node": "^16.2.0",
-    "npm": "^7.13.0"
+    "node": "^16.8.0",
+    "npm": "^7.22.0"
   },
   "dependencies": {
     "@sentry/integrations": "^6.4.1",
