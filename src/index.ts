@@ -4,8 +4,7 @@ import https from "https";
 
 import { RewriteFrames } from "@sentry/integrations";
 import * as Sentry from "@sentry/node";
-import bodyParser from "body-parser";
-import express from "express";
+import express, { RequestHandler } from "express";
 
 import { handleEnd } from "./controllers/handleEnd";
 import { handleIndex } from "./controllers/handleIndex";
@@ -26,7 +25,7 @@ Sentry.init({
 const app = express();
 
 (async () => {
-  app.use(bodyParser.json());
+  app.use(express.json() as RequestHandler);
 
   app.get("/", handleIndex);
   app.post("/start", handleStart);
