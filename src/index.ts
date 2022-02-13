@@ -5,6 +5,7 @@ import https from "https";
 import { RewriteFrames } from "@sentry/integrations";
 import * as Sentry from "@sentry/node";
 import express, { RequestHandler } from "express";
+import fetch from "node-fetch";
 
 import { handleEnd } from "./controllers/handleEnd";
 import { handleIndex } from "./controllers/handleIndex";
@@ -24,6 +25,8 @@ Sentry.init({
 
 const app = express();
 
+const url = process.env.DEBUG_HOOK;
+
 (async () => {
   app.use(express.json() as RequestHandler);
 
@@ -36,6 +39,15 @@ const app = express();
 
   httpServer.listen(1080, () => {
     logHandler.log("http", "http server listening on port 1080");
+    if (url) {
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ content: "Battlesnake HTTP online!" }),
+      });
+    }
   });
 
   if (process.env.NODE_ENV === "production") {
@@ -62,6 +74,15 @@ const app = express();
 
     httpsServer.listen(1443, () => {
       logHandler.log("http", "https server listening on port 1443");
+      if (url) {
+        fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ content: "Battlesnake HTTPS online!" }),
+        });
+      }
     });
   }
 })();

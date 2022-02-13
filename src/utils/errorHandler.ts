@@ -2,6 +2,7 @@
 import * as Sentry from "@sentry/node";
 
 import { logHandler } from "./logHandler";
+import { postToWebhook } from "./postToWebhook";
 
 /**
  * Standard error handling module to pipe errors to Sentry and
@@ -18,4 +19,5 @@ export const errorHandler = (context: string, err: unknown): void => {
     JSON.stringify({ errorMessage: error.message, errorStack: error.stack })
   );
   Sentry.captureException(error);
+  postToWebhook(context, error);
 };
