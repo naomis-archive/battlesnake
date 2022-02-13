@@ -40,7 +40,7 @@ const url = process.env.DEBUG_HOOK;
   httpServer.listen(1080, () => {
     logHandler.log("http", "http server listening on port 1080");
     if (url) {
-      fetch(url, {
+      void fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -75,7 +75,7 @@ const url = process.env.DEBUG_HOOK;
     httpsServer.listen(1443, () => {
       logHandler.log("http", "https server listening on port 1443");
       if (url) {
-        fetch(url, {
+        void fetch(url, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

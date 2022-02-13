@@ -19,7 +19,7 @@ export const postToWebhook = async (context: string, error: Error) => {
     fields: [
       {
         name: "Stack Trace",
-        value: `\`\`\`${error.stack?.slice(0, 1000)}\`\`\``,
+        value: `\`\`\`${error.stack?.slice(0, 1000) || "no stack"}\`\`\``,
       },
     ],
   };

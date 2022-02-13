@@ -19,5 +19,5 @@ export const errorHandler = (context: string, err: unknown): void => {
     JSON.stringify({ errorMessage: error.message, errorStack: error.stack })
   );
   Sentry.captureException(error);
-  postToWebhook(context, error);
+  void postToWebhook(context, error);
 };
