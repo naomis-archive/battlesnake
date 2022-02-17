@@ -14,8 +14,8 @@ export const handleIndex = (_: Request, response: Response): void => {
       apiversion: "1",
       author: "nhcarrigan",
       color: "#451c70",
-      head: "replit-mark",
-      tail: "replit-notmark",
+      head: "crystal-power",
+      tail: "crystal-power",
     };
     response.status(200).json(battleSnakeInfo);
   } catch (err) {
