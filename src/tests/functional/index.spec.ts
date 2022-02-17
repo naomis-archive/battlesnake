@@ -10,8 +10,8 @@ const expectedBody = {
   apiversion: "1",
   author: "nhcarrigan",
   color: "#451c70",
-  head: "replit-mark",
-  tail: "replit-notmark",
+  head: "crystal-power",
+  tail: "crystal-power",
 };
 
 suite("'/' Route", () => {
