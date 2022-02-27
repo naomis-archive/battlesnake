@@ -6,7 +6,7 @@ An API server to interface with the Battlesnake Client.
 
 ## Live Version
 
-This page is currently deployed. [View the live website.](https://play.battlesnake.com/u/nhcarrigan/becca-lyria/)
+This page is currently deployed. [View the live website.](https://play.battlesnake.com/u/nhcarrigan/becca-lyria/) Want to [run it yourself?](https://docs.nhcarrigan.com/#/battlesnake/usage)
 
 ## Feedback and Bugs
 
@@ -32,4 +32,4 @@ The full license terms may be viewed in the [LICENSE.md file](./LICENSE.md)
 
 ## Contact
 
-We may be contacted through our [Chat Server](http://chat.nhcarrigan.com) or via [email form](https://contact.nhcarrigan.com).
+We may be contacted through our [Chat Server](http://chat.nhcarrigan.com) or via `contact@nhcarrigan.com`.
