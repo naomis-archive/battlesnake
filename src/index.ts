@@ -52,15 +52,15 @@ const url = process.env.DEBUG_HOOK;
 
   if (process.env.NODE_ENV === "production") {
     const privateKey = await readFile(
-      "/etc/letsencrypt/live/battlesnake.nhcarrigan.com/privkey.pem",
+      "/etc/letsencrypt/live/battlesnake.naomi.lgbt/privkey.pem",
       "utf8"
     );
     const certificate = await readFile(
-      "/etc/letsencrypt/live/battlesnake.nhcarrigan.com/cert.pem",
+      "/etc/letsencrypt/live/battlesnake.naomi.lgbt/cert.pem",
       "utf8"
     );
     const ca = await readFile(
-      "/etc/letsencrypt/live/battlesnake.nhcarrigan.com/chain.pem",
+      "/etc/letsencrypt/live/battlesnake.naomi.lgbt/chain.pem",
       "utf8"
     );
 
