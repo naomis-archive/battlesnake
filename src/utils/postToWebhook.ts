@@ -1,5 +1,3 @@
-import fetch from "node-fetch";
-
 /**
  * Module to post an error message to a webhook.
  *
