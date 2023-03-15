@@ -5,7 +5,6 @@ import https from "https";
 import { RewriteFrames } from "@sentry/integrations";
 import * as Sentry from "@sentry/node";
 import express, { RequestHandler } from "express";
-import fetch from "node-fetch";
 
 import { handleEnd } from "./controllers/handleEnd";
 import { handleIndex } from "./controllers/handleIndex";
