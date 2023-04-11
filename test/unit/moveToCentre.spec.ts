@@ -1,7 +1,7 @@
 import { assert } from "chai";
 
-import { MoveType } from "../../interfaces/MoveInt";
-import { moveToCentre } from "../../modules/moveToCentre";
+import { MoveType } from "../../src/interfaces/MoveInt";
+import { moveToCentre } from "../../src/modules/moveToCentre";
 
 const boardSize = [11, 11];
 suite("Move to Centre", () => {
