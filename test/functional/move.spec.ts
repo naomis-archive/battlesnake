@@ -1,10 +1,10 @@
 import chai, { assert } from "chai";
 import chaiHttp from "chai-http";
 
-import app from "../../index";
-import { BattleSnakeInt } from "../../interfaces/BattleSnakeInt";
-import { BoardInt } from "../../interfaces/BoardInt";
-import { RequestBodyInt } from "../../interfaces/RequestBodyInt";
+import app from "../../src/index";
+import { BattleSnakeInt } from "../../src/interfaces/BattleSnakeInt";
+import { BoardInt } from "../../src/interfaces/BoardInt";
+import { RequestBodyInt } from "../../src/interfaces/RequestBodyInt";
 
 chai.use(chaiHttp);
 

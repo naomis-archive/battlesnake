@@ -1,8 +1,8 @@
 import { assert } from "chai";
 
-import { BoardInt } from "../../interfaces/BoardInt";
-import { CoordinateInt } from "../../interfaces/CoordinateInt";
-import { calculateMove } from "../../modules/calculateMove";
+import { BoardInt } from "../../src/interfaces/BoardInt";
+import { CoordinateInt } from "../../src/interfaces/CoordinateInt";
+import { calculateMove } from "../../src/modules/calculateMove";
 
 const defaultMockBoard: BoardInt = {
   height: 11,

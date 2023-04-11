@@ -1,13 +1,13 @@
 import { assert } from "chai";
 
-import { BattleSnakeInt } from "../../interfaces/BattleSnakeInt";
-import { BoardInt } from "../../interfaces/BoardInt";
-import { RequestBodyInt } from "../../interfaces/RequestBodyInt";
-import { findOccupiedSquares } from "../../modules/findOccupiedSquares";
-import { obsAtDown } from "../../modules/obstacles/obsAtDown";
-import { obsAtLeft } from "../../modules/obstacles/obsAtLeft";
-import { obsAtRight } from "../../modules/obstacles/obsAtRight";
-import { obsAtUp } from "../../modules/obstacles/obsAtUp";
+import { BattleSnakeInt } from "../../src/interfaces/BattleSnakeInt";
+import { BoardInt } from "../../src/interfaces/BoardInt";
+import { RequestBodyInt } from "../../src/interfaces/RequestBodyInt";
+import { findOccupiedSquares } from "../../src/modules/findOccupiedSquares";
+import { obsAtDown } from "../../src/modules/obstacles/obsAtDown";
+import { obsAtLeft } from "../../src/modules/obstacles/obsAtLeft";
+import { obsAtRight } from "../../src/modules/obstacles/obsAtRight";
+import { obsAtUp } from "../../src/modules/obstacles/obsAtUp";
 
 const mockSnake: BattleSnakeInt = {
   id: "mockEnemy",
