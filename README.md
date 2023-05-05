@@ -1,3 +1,5 @@
+This project is archived.
+
 # Battlesnake!
 
 An API server to interface with the Battlesnake Client.
